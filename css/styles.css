@@ -374,7 +374,34 @@ margin-bottom: 15px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    position: relative;
 }
+
+.footer::before,
+.footer::after {
+    position: absolute;
+    background-repeat: no-repeat;
+    content: '';
+    bottom: 0;
+    background-size: 100%;
+}
+
+.footer::before {
+    background-image: url(../images/small-bread.png);
+    width: 180px;
+    height: 120px;
+    left: 0;
+}
+
+.footer::after {
+    background-image: url(../images/big-bread.png);
+    width: 380px;
+    height: 190px;
+    right: 0;
+
+}
+
+
 .container-footer {
 display: flex;
 gap: 20px;
