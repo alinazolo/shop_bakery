@@ -1,0 +1,12 @@
+.menu-link {
+    font-size: 18px;
+    text-align: center;
+    color: var(--color-primary-light);
+    transition: color 0.3s;
+    }
+    
+    .menu-link:hover, .menu-link:focus, .menu-link:active {
+    font-size: 18px;
+    text-align: center;
+    color: var(--brand-color-light);
+    }

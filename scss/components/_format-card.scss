@@ -1,0 +1,64 @@
+.format-card {
+    position: relative;
+height: 444px;
+padding: 24px;
+border-radius: 16px;
+background-image: linear-gradient(
+    180deg,
+    rgba(49, 38, 26, 0) 55.21%,
+    rgba(49, 38, 26, 0.71) 72.92%,
+    var(--color-primary-dark)
+  );
+  
+transition: scale 0.3s;
+
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+
+&:hover {
+    transform: scale(1.05);
+}
+
+&__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+&__titile {
+    font-weight: 600;
+    font-size: 24px;
+    color: var(--color-primary-light);
+    margin-bottom: 16px;
+    }
+    
+    &__text {
+        display: flex;
+        gap: 10px;
+        font-weight: 300;
+        font-size: 14px;
+        color: var(--color-primary-light);
+        flex-direction: column;
+        }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

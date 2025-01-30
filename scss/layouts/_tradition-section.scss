@@ -1,0 +1,46 @@
+.tradition-section {
+    padding-top: 96px;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+        }
+
+    &__content {
+            max-width: 710px;
+            }
+
+    &__title {
+                margin-bottom: 42px;
+            }
+    &__text {
+    color: var(--color-primary-dark);
+    margin-bottom: 42px;
+
+    &--limited {
+        max-width: 340px;
+    }
+                }
+    
+}
+
+
+    
+    
+    
+
+    
+    
+    
+    .tradition-text.limited {
+        max-width: 340px;
+    }
+    
+    
+    
+    
+    .text-accent.shop {
+    text-transform: uppercase;
+    }
+    
