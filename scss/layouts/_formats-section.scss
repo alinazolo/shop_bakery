@@ -1,27 +1,49 @@
 .formats-section {
 
-    &__container {
+    &__slider {
         display: flex;
         gap: 32px;
         align-items: center;
     }
 
+    &__container {
+        overflow: hidden;
+    }
+
+   &__list {
+    margin-bottom: 16px;
+
+    @media screen and (min-width: $bp-tablet) {
+        margin-bottom: 32px;
+    }
+   }
+
     &__title {
         text-align: center;
-        margin: 0 auto 80px;
+        margin: 0 auto;
     }
+
+   &__button {
+    display: none;
+
+    @media screen and (min-width: $bp-tablet) {
+        display: flex;
+    }
+   }
+
+
     
-    &__list {
-    display: flex;
-     gap: 20px;
-    flex-wrap: wrap;
-} 
+//     &__list {
+//     display: flex;
+//      gap: 20px;
+//     flex-wrap: wrap;
+// } 
 
-    &__item {
-    flex-basis: calc((100% - 40px) / 3);
+//     &__item {
+//     flex-basis: calc((100% - 40px) / 3);
+// }
 }
-}
-
+ 
 
 
 

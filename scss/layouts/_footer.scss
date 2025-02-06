@@ -6,10 +6,12 @@
     background-size: cover;
     background-position: center;
     position: relative;
-}
 
-.footer::before,
-.footer::after {
+
+
+
+    &::before,
+&::after {
     position: absolute;
     background-repeat: no-repeat;
     content: '';
@@ -17,14 +19,14 @@
     background-size: 100%;
 }
 
-.footer::before {
+&::before {
     background-image: url(../images/small-bread.png);
     width: 180px;
     height: 120px;
     left: 0;
 }
 
-.footer::after {
+&::after {
     background-image: url(../images/big-bread.png);
     width: 380px;
     height: 190px;
@@ -32,38 +34,64 @@
 
 }
 
-
-.container-footer {
-display: flex;
-gap: 20px;
-}
-
-.footer-nav,
-.footer-adress {
+&__container {
     display: flex;
-    flex-basis: 50%;
     gap: 20px;
-}
+    flex-direction: column;
 
-.logo-footer,
-.menu-link-list,
-.footer-adress-list,
-.adress-info {
+    @media screen and (min-width: $bp-tablet) {
+        flex-direction: row;
+        }
+
+    }
+    
+    &__nav,
+    &__adress {
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        text-align: center;
+
+
+        @media screen and (min-width: $bp-tablet) {
+            flex-basis: 50%;
+            flex-direction: row;
+            text-align: left;
+            // width: 600px;
+            // height: 595px;
+            }
+    }
+
+&__logo,
+&__menu-link-list,
+&__adress-list,
+&__adress-info {
     flex-grow: 1;
 }
 
-.footer-adress-link {
+&__adress-link {
 font-weight: 300;
 font-size: 16px;
 color: var(--color-primary-light)
 }
 
-.copyright {
+&__copyright {
 font-weight: 400;
 font-size: 14px;
 color: #a18268;
 }
 
-.address-icon {
+&__logo-icon {
     fill: #FAF4EA;
 }
+
+&__address-icon {
+    fill: #FAF4EA;
+}
+}
+
+
+
+
+
+
