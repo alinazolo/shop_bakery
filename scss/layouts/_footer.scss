@@ -63,11 +63,34 @@
     }
 
 &__logo,
-&__menu-link-list,
-&__adress-list,
+&__menu,
+&__adress-contacts,
 &__adress-info {
     flex-grow: 1;
 }
+
+&__menu {
+    display: flex;
+    gap: 18px;
+    flex-direction: column;
+
+    @media screen and (min-width: $bp-tablet) {
+        gap: 16px;
+    }
+
+}
+
+&__adress-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-bottom: 16px;
+
+    @media screen and (min-width: $bp-tablet) {
+        gap: 16px;
+    }
+}
+
 
 &__adress-link {
 font-weight: 300;
@@ -85,8 +108,28 @@ color: #a18268;
     fill: #FAF4EA;
 }
 
+&__icons-wrapper {
+    display: flex;
+    column-gap: 22px;
+    justify-content: center;
+
+    @media screen and (min-width: $bp-tablet) {
+        justify-content: left;
+    }
+}
+
 &__address-icon {
     fill: #FAF4EA;
+}
+
+&__adress-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    @media screen and (min-width: $bp-tablet) {
+        gap: 16px;
+    }
 }
 }
 
