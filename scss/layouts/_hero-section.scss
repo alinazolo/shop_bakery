@@ -19,6 +19,7 @@
         color: var(--color-primary-light);
 
         @media screen and (min-width: $bp-desktop) {
+            
             margin-bottom: 0;
             font-size: 128px;
             line-height: 1.5;
@@ -32,7 +33,7 @@
 
             margin: 0 auto;
 
-            @media screen and (min-width: $bp-tablet) {
+            @media screen and (min-width: $bp-desktop) {
                 display: none;
             }
         }
